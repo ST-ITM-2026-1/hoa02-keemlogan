@@ -537,3 +537,43 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== Projects Page - Filter Bar ===== */
+.project-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: var(--accent-light);
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.filter-btn.active {
+    background-color: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+}
+
+/* 필터링되었을 때 부드럽게 숨기기 위한 클래스 */
+.project-group.hidden {
+    display: none;
+}
